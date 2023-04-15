@@ -7,6 +7,7 @@
     <title>SunTan-Solariebäddar</title>
     <link rel="stylesheet" href="mystyle.css">
     <link href="print.css" rel="stylesheet" type="text/css" media="print">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 
 </head>
 <body class="body" onload="startUp()">
@@ -146,14 +147,14 @@
             </div>
         </div>
         <div class="grid-container-footer">
-            <h5 class="infotext">
+            <h4 class="infotext">
                 SunTan Umeå<br>ME Solarium AB<br>Hamrinsvägen 2,<br>903 33 Umeå<br>‍<br>Kontakt<br>Tel: 070-569 51 50<br>
-            </h5>
+            </h4>
         </div>
         <div class="grid-container-social">
-            <h5 class="infotext">
+            <h4 class="infotext">
                 Besök oss på facebook eller instagram!<br>Kontakt<br>
-            </h5>
+            </h4>
         </div>
         <div class="grid-container-icon">
             <img src="facebook-logo.png" alt="Facebook" height="50">
@@ -166,9 +167,9 @@
     let productPages = 4;
     let leftArrow = document.getElementById("btn-left");
     let rightArrow = document.getElementById("btn-right");
+    let perMin = [15,10,8,6];
     let url = window.location.href;
     let i= url[url.length-1];
-    let perMin = [15,10,8,6];
 
     var slider1 = document.getElementById("myRange1");
     var output1 = document.getElementById("demo1");
@@ -202,6 +203,7 @@
     output4.innerHTML = slider4.value;
     kostnad4.innerHTML = slider4.value *perMin[3];
 
+
     slider1.oninput = function() {
         output1.innerHTML = this.value;
         kostnad1.innerHTML = this.value*perMin[0];
@@ -218,14 +220,15 @@
         output4.innerHTML = this.value;
         kostnad4.innerHTML = this.value*perMin[3];
     }
+
     rightArrow.addEventListener("click",()=>{
 
         if(i<(productPages-1)){
             i ++;
-            document.getElementById("scroll-"+i%productPages).style.visibility = "visible";
-            document.getElementById("scroll-"+(i-1)%productPages).style.visibility = "hidden";
-            document.getElementById("dot-"+i%productPages).style.backgroundColor = "black";
-            document.getElementById("dot-"+(i-1)%productPages).style.backgroundColor = "#bbb";
+            document.getElementById("scroll-"+i).style.visibility = "visible";
+            document.getElementById("scroll-"+(i-1)).style.visibility = "hidden";
+            document.getElementById("dot-"+i).style.backgroundColor = "black";
+            document.getElementById("dot-"+(i-1)).style.backgroundColor = "#bbb";
         }
         if(i==productPages-1){
             rightArrow.style.opacity ="0.3";
@@ -239,10 +242,10 @@
 
         if(i>0){
             i --;
-            document.getElementById("scroll-"+i%productPages).style.visibility = "visible";
-            document.getElementById("scroll-"+(i+1)%productPages).style.visibility = "hidden";
-            document.getElementById("dot-"+i%productPages).style.backgroundColor = "black";
-            document.getElementById("dot-"+(i+1)%productPages).style.backgroundColor = "#bbb";
+            document.getElementById("scroll-"+i).style.visibility = "visible";
+            document.getElementById("scroll-"+(i+1)).style.visibility = "hidden";
+            document.getElementById("dot-"+i).style.backgroundColor = "black";
+            document.getElementById("dot-"+(i+1)).style.backgroundColor = "#bbb";
         }
         if(i==0){
             leftArrow.style.opacity ="0.3";
@@ -258,6 +261,7 @@
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
     }
+
     function startUp(){
         document.getElementById("scroll-"+(i)).style.visibility = "visible";
         document.getElementById("dot-"+(i)).style.backgroundColor = "black";
