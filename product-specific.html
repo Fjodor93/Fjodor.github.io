@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="author" content="Fjodor Joss">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunTan-Solariebäddar</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="print.css" rel="stylesheet" type="text/css" media="print">
+
+</head>
+<body class="body" onload="startUp()">
+
+    <div class="grid-container">
+        <div class="flex-header">
+			<h1 onclick="location.href='Website.html'" class="fontlogo">
+					SunTan
+			</h1>
+            <div class="nav-menu">
+                <span style="font-size:38px;color:rgb(70, 59, 52);cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+        </div>
+        <div class="flex-banner">
+            <h6 class="banner-text">
+                +18 för att sola! Legitimera dig med vår
+                <a href="https://play.google.com/store/apps/details?id=com.flexaccess.flexysun&amp;hl=sv&amp;gl=US" 
+                id="https-play.google.com-store-apps-details-id-com.flexaccess.flexysun-hl-sv-gl-US" target="_blank" 
+                class="link-text">app</a>
+                för entré!
+            </h6>
+        </div>
+        <div id="mySidenav" class="sidenav">
+                <h3 href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</h3>
+                <a class="infotext" href="Website.html">Hem</a>
+                <a class="infotext" href="product-page.html">Solariebäddar</a>
+                <a class="infotext" href="#">Sololjor</a>
+                <a class="infotext" href="#">Om oss</a>
+        </div>
+        <div class="load-box">
+            <div class="slide-dot" id="dot-0"></div>
+            <div class="randomspacer"></div>
+            <div class="slide-dot" id="dot-1"></div>
+            <div class="randomspacer"></div>
+            <div class="slide-dot" id="dot-2"></div>
+            <div class="randomspacer"></div>
+            <div class="slide-dot" id="dot-3"></div>
+        </div>
+            <div class="grid-content-specific" id="scroll-0">
+                <div class="grid-content-products">
+                    <div class="grid-productinfo-1">
+                        <h3 class="infotext">
+                            MegaSun<br><br>
+                        <sub>
+                            48st högeffektiva D-vitaminrör. 4st högeffektiva lampor och 2st collagenrör 
+                            för ansiktet.Om det blir varmt under solningen så passa på att njuta av en 
+                            avslappnande aroma aquacooling.
+                        </sub>
+                        </h3>
+                    </div>
+                    <div class="grid-productpicture-1">
+                        <img src="megasun.jpg" alt="MegaSun" width="100%">
+                    </div>
+                    <div class="grid-productprice-1">
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="30" value="10" class="slider1" id="myRange1">
+                        <p><span id="demo1"></span> minuter kostar <span id="pris1"></span>kr</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-content-specific" id="scroll-1">
+                <div class="grid-content-products">
+                    <div class="grid-productinfo-1">
+                        <h3 class="infotext">
+                            Ergoline<br><br>
+                        <sub>
+                            48st högeffektiva D-vitaminrör. 4st högeffektiva lampor och 2st collagenrör 
+                            för ansiktet.Om det blir varmt under solningen så passa på att njuta av en 
+                            avslappnande aroma aquacooling.
+                        </sub>
+                        </h3>
+                    </div>
+                    <div class="grid-productpicture-1">
+                        <img src="megasunpink.png" alt="Ergonline Bild" width="100%">
+                    </div>
+                    <div class="grid-productprice-1">
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="30" value="10" class="slider2" id="myRange2">
+                        <p><span style="opacity: 1;"id="demo2"></span> minuter kostar <span id="pris2"></span>kr</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-content-specific" id="scroll-2">
+                <div class="grid-content-products">
+                    <div class="grid-productinfo-1">
+                        <h3 class="infotext">
+                            Prestige<br><br>
+                        <sub>
+                            48st högeffektiva D-vitaminrör. 4st högeffektiva lampor och 2st collagenrör 
+                            för ansiktet.Om det blir varmt under solningen så passa på att njuta av en 
+                            avslappnande aroma aquacooling.
+                        </sub>
+                        </h3>
+                    </div>
+                    <div class="grid-productpicture-1">
+                        <img src="megasunorange.png" alt="MegaSun" width="100%">
+                    </div>
+                    <div class="grid-productprice-1">
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="30" value="10" class="slider3" id="myRange3">
+                        <p><span id="demo3"></span> minuter kostar <span id="pris3"></span>kr</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="grid-content-specific" id="scroll-3">
+                <div class="grid-content-products">
+                    <div class="grid-productinfo-1">
+                        <h3 class="infotext">
+                            Sundelux<br><br>
+                        <sub>
+                            48st högeffektiva D-vitaminrör. 4st högeffektiva lampor och 2st collagenrör 
+                            för ansiktet.Om det blir varmt under solningen så passa på att njuta av en 
+                            avslappnande aroma aquacooling.
+                        </sub>
+                        </h3>
+                    </div>
+                    <div class="grid-productpicture-1">
+                        <img src="megasunyellow.png" alt="MegaSun" width="100%">
+                    </div>
+                    <div class="grid-productprice-1">
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="30" value="10" class="slider4" id="myRange4">
+                        <p><span id="demo4"></span> minuter kostar <span id="pris4"></span>kr</p>
+                    </div>
+                </div>
+            </div> 
+        <div class="content-wrap">
+            <div id="btn-left">
+                <img src="left-arrow.png" alt="<" height="35px">
+            </div>
+            <div id="btn-right">
+                <img src="right-arrow.png" alt=">" height="35px">
+            </div>
+        </div>
+        <div class="grid-container-footer">
+            <h5 class="infotext">
+                SunTan Umeå<br>ME Solarium AB<br>Hamrinsvägen 2,<br>903 33 Umeå<br>‍<br>Kontakt<br>Tel: 070-569 51 50<br>
+            </h5>
+        </div>
+        <div class="grid-container-social">
+            <h5 class="infotext">
+                Besök oss på facebook eller instagram!<br>Kontakt<br>
+            </h5>
+        </div>
+        <div class="grid-container-icon">
+            <img src="facebook-logo.png" alt="Facebook" height="50">
+            <div class="randomspacer"></div>
+            <img src="instagram-logo.png" alt="Instagram" height="50">
+        </div>
+    </div>
+
+    <script>
+    let productPages = 4;
+    let leftArrow = document.getElementById("btn-left");
+    let rightArrow = document.getElementById("btn-right");
+    let url = window.location.href;
+    let i= url[url.length-1];
+    let perMin = [15,10,8,6];
+
+    var slider1 = document.getElementById("myRange1");
+    var output1 = document.getElementById("demo1");
+    var kostnad1 = document.getElementById("pris1");
+    var slider2 = document.getElementById("myRange2");
+    var output2 = document.getElementById("demo2");
+    var kostnad2 = document.getElementById("pris2");
+    var slider3 = document.getElementById("myRange3");
+    var output3 = document.getElementById("demo3");
+    var kostnad3 = document.getElementById("pris3");
+    var slider4 = document.getElementById("myRange4");
+    var output4 = document.getElementById("demo4");
+    var kostnad4 = document.getElementById("pris4");
+    
+    if(i==productPages-1){
+        rightArrow.style.opacity ="0.3";
+    }
+    if(i==0){
+        leftArrow.style.opacity ="0.3";
+    }
+    else{
+        leftArrow.style.opacity = "1";
+        rightArrow.style.opacity = "1";
+    }
+    output1.innerHTML = slider1.value;
+    kostnad1.innerHTML = slider1.value *perMin[0];
+    output2.innerHTML = slider2.value;
+    kostnad2.innerHTML = slider2.value *perMin[1];
+    output3.innerHTML = slider3.value;
+    kostnad3.innerHTML = slider3.value *perMin[2];
+    output4.innerHTML = slider4.value;
+    kostnad4.innerHTML = slider4.value *perMin[3];
+
+    slider1.oninput = function() {
+        output1.innerHTML = this.value;
+        kostnad1.innerHTML = this.value*perMin[0];
+    }
+    slider2.oninput = function() {
+        output2.innerHTML = this.value;
+        kostnad2.innerHTML = this.value*perMin[1];
+    }
+    slider3.oninput = function() {
+        output3.innerHTML = this.value;
+        kostnad3.innerHTML = this.value*perMin[2];
+    }
+    slider4.oninput = function() {
+        output4.innerHTML = this.value;
+        kostnad4.innerHTML = this.value*perMin[3];
+    }
+    rightArrow.addEventListener("click",()=>{
+
+        if(i<(productPages-1)){
+            i ++;
+            document.getElementById("scroll-"+i%productPages).style.visibility = "visible";
+            document.getElementById("scroll-"+(i-1)%productPages).style.visibility = "hidden";
+            document.getElementById("dot-"+i%productPages).style.backgroundColor = "black";
+            document.getElementById("dot-"+(i-1)%productPages).style.backgroundColor = "#bbb";
+        }
+        if(i==productPages-1){
+            rightArrow.style.opacity ="0.3";
+        }
+        else{
+            leftArrow.style.opacity = "1";
+            rightArrow.style.opacity = "1";
+        }
+    });
+    leftArrow.addEventListener("click",()=>{
+
+        if(i>0){
+            i --;
+            document.getElementById("scroll-"+i%productPages).style.visibility = "visible";
+            document.getElementById("scroll-"+(i+1)%productPages).style.visibility = "hidden";
+            document.getElementById("dot-"+i%productPages).style.backgroundColor = "black";
+            document.getElementById("dot-"+(i+1)%productPages).style.backgroundColor = "#bbb";
+        }
+        if(i==0){
+            leftArrow.style.opacity ="0.3";
+        }
+        else{
+            leftArrow.style.opacity = "1";
+            rightArrow.style.opacity = "1";
+        }
+    });
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    function startUp(){
+        document.getElementById("scroll-"+(i)).style.visibility = "visible";
+        document.getElementById("dot-"+(i)).style.backgroundColor = "black";
+        if(i==productPages-1){
+            rightArrow.style.opacity ="0.3";
+        }
+        if(i==0){
+            leftArrow.style.opacity ="0.3";
+        }
+    }
+</script>
+</body>
+</html>
