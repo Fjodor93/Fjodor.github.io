@@ -7,16 +7,9 @@
 <title>SunTan Umeå</title>
 <link rel="stylesheet" href="mystyle.css">
 <link href="print.css" rel="stylesheet" type="text/css" media="print">
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 </head>
 <body class="body">
-    <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "200px";
-        }
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
     <div class="grid-container">
         <div class="flex-header">
             <h1 class="fontlogo">
@@ -63,33 +56,33 @@
         <div class="grid-container-prodiconr">
             <img src="sunoil.png" alt="SunOil" height="70">
         </div>
-        <div class="grid-container-info-1">
-            <h4 class="infotext">
+        <div class="grid-container-info-1" id="fadeIn0">
+            <h3 class="infotext">
                 VANLIGA FRÅGOR<br>
                 <sub>
                 Hur öppnar man dörren?<br>Kan man betala med kort?<br>Vad gör collagenrör?<br>Trasig utrustning?<br>Hur ofta byts rören?
                 </sub>
-            </h4>
+            </h3>
         </div>
-        <div class="grid-container-info-2">
-            <h4 class="infotext">
+        <div class="grid-container-info-2" id="fadeIn1">
+            <h3 class="infotext">
                 <br>
                 <sub>
                 Hur öppnar man dörren?<br>Kan man betala med kort?<br>Vad gör collagenrör?<br>Trasig utrustning?<br>Hur ofta byts rören?
                 </sub>
-            </h4>
+            </h3>
         </div>
     </div>
 
     <div class="grid-container-footer">
-        <h5 class="infotext">
+        <h4 class="infotext">
             SunTan Umeå<br>ME Solarium AB<br>Hamrinsvägen 2,<br>903 33 Umeå<br>‍<br>Kontakt<br>Tel: 070-569 51 50<br>Maria Wiking<br>Tel: 070-569 50 51<br>
-        </h5>
+        </h4>
     </div>
     <div class="grid-container-social">
-        <h5 class="infotext">
+        <h4 class="infotext">
             Besök oss på facebook eller instagram!<br>
-        </h5>
+        </h4>
     </div>
         <div class="grid-container-icon">
 			<div class="change-cursor">
@@ -101,5 +94,33 @@
 			</div>
 		</div>
     </div>
+    <script>
+        let fade0 = document.getElementById("fadeIn0");
+        let fade1 = document.getElementById("fadeIn1");
+
+        fade0.addEventListener("mouseenter", ()=>{
+            fade0.style.opacity ="1";
+            fade1.style.opacity ="1";
+        });
+        fade0.addEventListener("mouseleave", ()=>{
+            fade0.style.opacity ="0.7";
+            fade1.style.opacity ="0.7";
+        });
+        fade1.addEventListener("mouseenter", ()=>{
+            fade0.style.opacity ="1";
+            fade1.style.opacity ="1";
+        });
+        fade1.addEventListener("mouseleave", ()=>{
+            fade0.style.opacity ="0.7";
+            fade1.style.opacity ="0.7";
+        });
+
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "200px";
+        }
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
