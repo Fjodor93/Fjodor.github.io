@@ -1,0 +1,32 @@
+.colorcontainer{
+position: fixed;
+display: flex;
+top: 50px;
+left: 5px;
+}
+.innercolorcontainer{
+    size: 5px;
+    border-radius: 5px;
+    border: gray 1px solid;
+    padding:5px;
+    margin: 4px;
+}
+.innercolorcontainer:hover{
+    cursor: pointer;
+    border: black 1px solid;
+}
+#colorwhite{
+    background-color: white;
+}
+#coloroffwhite{
+    background-color: lightgray;
+}
+#coloraquamarine{
+    background-color: #7FFFD4;
+}
+#coloremerald{
+    background-color: lightcoral;
+}
+#colorcreme{
+    background-color: #FFFFCC;
+}

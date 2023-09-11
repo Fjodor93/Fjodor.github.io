@@ -1,0 +1,27 @@
+[
+{
+    "Key": 0,
+    "Name": "Megasun 1",
+    "Description": "48st högeffektiva D-vitaminrör. 4st högeffektiva lampor och 2st collagenrör för ansiktet.Om det blir varmt under solningen så passa på att njuta av en avslappnande aroma aquacooling.",
+    "Picture": "/megasun.jpg",
+    "Price": "10"
+},{
+    "Key": 1,
+    "Name": "Megasun 2",
+    "Description": "48st högeffektiva D-vitaminrör. 4st högeffektiva lampor och 2st collagenrör för ansiktet.Om det blir varmt under solningen så passa på att njuta av en avslappnande aroma aquacooling.",
+    "Picture": "/megasunorange.png",
+    "Price": "12"
+},{
+    "Key": 2,
+    "Name": "Megasun 3",
+    "Description": "48st högeffektiva D-vitaminrör. 4st högeffektiva lampor och 2st collagenrör för ansiktet.Om det blir varmt under solningen så passa på att njuta av en avslappnande aroma aquacooling.",
+    "Picture": "/megasunpink.png",
+    "Price": "14"
+},{
+    "Key": 3,
+    "Name": "Megasun 4",
+    "Description": "48st högeffektiva D-vitaminrör. 4st högeffektiva lampor och 2st collagenrör för ansiktet.Om det blir varmt under solningen så passa på att njuta av en avslappnande aroma aquacooling.",
+    "Picture": "/megasunyellow.png",
+    "Price": "18"
+}
+]

@@ -1,0 +1,58 @@
+@media screen and (min-width: 750px){
+    .contentcontainer{
+        right: 0px;
+    }
+}
+@media screen and (max-width: 749px){
+    .contentcontainer{
+        right: 0px;
+    }
+}
+.contentcontainer{
+    position: fixed;
+    top: 95px;
+    bottom: 200px;
+    left:0px;
+    height: auto;
+    width: auto;
+    overflow-y:scroll;
+}
+.contentcontainermobile{
+    position: fixed;
+    top: 95px;
+    right: 0px;
+    bottom: 200px;
+    left:0px;
+    height: auto;
+    width: auto;
+    overflow-y:scroll;
+}
+::-webkit-scrollbar-track{
+    background: #BBB;
+    border-radius: 10px;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 10px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-button{
+    background: #BBB;
+}
+.tillbaka{
+    padding: 5px;
+    margin-left: 15px;
+    size: 50px;
+    color: black;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+}
+.tillbaka:hover{
+    color: gray;
+}
+

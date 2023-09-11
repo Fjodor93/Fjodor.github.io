@@ -1,0 +1,132 @@
+@media screen and (min-width: 750px){
+.contentGrid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 15px;
+    cursor: pointer;
+}
+}
+@media screen and (max-width: 749px){
+    .contentGrid{
+        display: grid;
+        grid-template-columns: calc(100%-20px);
+        row-gap: 10px;
+        cursor: pointer;
+    }
+}
+.contentGrid{
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.solariumContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 5px;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    background-color: white;
+    justify-content: center;
+    color:black;
+}
+.solariumContainer:hover{
+    color:black;
+}
+.solariumContainerLeft{
+    width: auto;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 15px;
+    justify-content: right;
+}
+.solariumHeader{
+    min-width: 150px;
+    text-align: left;
+    justify-content: center;
+}
+.solariumInfo{
+    height: 90%;
+    min-width: 200px;
+    width: auto;
+    text-align: left;
+    justify-content: center;
+}
+.solariumContainerRight{
+    width: auto;
+    height: 100%;
+    justify-content: left;
+}
+.solariumDetailContainer{
+    display: grid;
+    columns: 50% 50%;
+    padding-left: 20px;
+    align-items: left;
+}
+.solariumPicture{
+    width: 60%;
+    margin: 15px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.solariumPrice{
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 25px;
+}
+
+.solariumPictureDetails{
+    width: 50%;
+    justify-content: center;
+    margin: 15px;
+    overflow: hidden;
+}
+.priceBarContainer {
+    justify-content: left;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    z-index: 2;
+  }
+.priceBar {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    z-index: 3;
+  }
+  
+  .priceBar:hover {
+    opacity: 1;
+  }
+  
+  .priceBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    background-color:black;
+    border-radius:50%;
+    height: 15px;
+    border: 0;
+    cursor: pointer;
+  }
+  .priceBar::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    cursor: pointer;
+  }
